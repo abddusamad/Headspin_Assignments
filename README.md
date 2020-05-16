@@ -29,5 +29,10 @@ Numpy is a library used specifically for advanced and faster data manipulation i
 We can create 2-D Numpy arrays as `a = np.array([[1,2,3], [4,5,6]])` and this would lead to a 2 dimensional array with 2 rows and 3 columns. 
 
 On this object, the attribute `shape` represents the dimensions. It can be used as `a.shape` to return `(2,3)` meaning **2 rows** and **3 columns** exist in this 2D array.
+## Collections
+Collections in Python are containers that are used to store collections of data, for example, list, dict, set, tuple etc. These are built-in collections. Several modules have been developed that provide additional data structures to store collections of data. One such module is the Python collections module.
 ### Counter
 A counter is a map from values to their frequencies. If you initialize a counter with a string, you get a map from each letter to the number of times it appears. If two words are anagrams, they yield equal Counters, so you can use Counters to test anagrams in linear time.
+You have to import the Counter class before you can create a counter instance.
+
+                   `from collections import Counter`
