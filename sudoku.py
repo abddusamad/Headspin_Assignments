@@ -1,0 +1,17 @@
+import numpy as np
+print(" type entries in single line")
+                                                 # constructing 5x5 array from single line input
+bo= np.array(list(map(int, input().split()))).reshape(5, 5)
+def validsolution(board):
+    for i in range(len(board)):
+        hadd=0
+        vadd=0
+        for j in range(len(board)):
+            vadd+=board[j][i]                    #adding vertical column
+            hadd+=board[i][j]                    #adding horizontal column
+            if board[i][j]<1 or board[i][j]>5:   #checking elements greater than 5 or less than 1
+                return print(False)
+        if vadd !=15 or hadd !=15:               #check if sum not equal to 15
+            return print(False)
+    return print(True)
+validsolution(bo)
