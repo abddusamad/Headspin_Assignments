@@ -6,3 +6,4 @@ data=file.read()                #read file
 word=Counter(data.split())      #count words in the file and stored as dictionary values
 for i in word:
     print(i,':',word[i])        #print words and count of their occurence
+file.close()    
